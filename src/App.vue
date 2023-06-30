@@ -11,9 +11,8 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
 </script>
 
 <template>
-  <div>
+
     <h1 style="color: rgb(255, 255, 255);">Minha livraria</h1>
-  </div>
   
   <div class="container-geral">
     <listagem-livros/>
