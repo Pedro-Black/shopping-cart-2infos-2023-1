@@ -49,7 +49,9 @@ function formatarPreco(preco) {
 </template>
 
 <style scoped>
-
+.carrinho{
+  color: rgb(255, 255, 255);
+}
 .wrap-carrinho .carrinho-total {
   position: fixed;
   bottom: 3%;
@@ -79,7 +81,7 @@ function formatarPreco(preco) {
   width: 50px;
   text-align: center;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0);
   background-color: transparent;
   margin-left: 10px;
 }
@@ -89,7 +91,7 @@ function formatarPreco(preco) {
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(255, 0, 0);
   padding: 0;
   margin: 0;
 }

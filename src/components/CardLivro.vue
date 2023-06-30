@@ -30,7 +30,7 @@ function formatarPreco(preco) {
 .card-livro {
   margin: 5px 10px;
   padding: 10px;
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(151, 40, 40);
   border-radius: 10px;
   width: 180px;
   color: white;
@@ -49,7 +49,7 @@ function formatarPreco(preco) {
   height: 270px;
 }
 .capa-livro {
-  width: 90%;
+  width: 100%;
   max-height: 100%;
 }
 

@@ -11,7 +11,10 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
 </script>
 
 <template>
-  <h1>Minha livraria</h1>
+  <div>
+    <h1 style="color: rgb(255, 255, 255);">Minha livraria</h1>
+  </div>
+  
   <div class="container-geral">
     <listagem-livros/>
     <carrinho-principal/>
@@ -29,7 +32,5 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
 .carrinho {
   /* min-width: 20%; */
 }
-
-
 
 </style>
