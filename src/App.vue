@@ -1,5 +1,8 @@
 <script setup>
-
+import {carrinho} from '@/_data/carrinho.js'
+function formatarPreco(preco) {
+  return 'R$ ' + preco.toFixed(2).replace('.', ',')
+}
 
 
 import CarrinhoPrincipal from '@/components/CarrinhoPrincipal.vue'
@@ -11,9 +14,12 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
 </script>
 
 <template>
-
-    <h1 style="color: rgb(255, 255, 255);">Minha livraria</h1>
-  
+<div class="cabeçario">
+  <span class="titulo">
+    <h1 style="color: rgb(255, 255, 255);">Black List</h1>
+    <h1 style=" color: rgb(255, 255, 255);">Total: {{ formatarPreco(carrinho.total) }} </h1>
+  </span>
+  </div>
   <div class="container-geral">
     <listagem-livros/>
     <carrinho-principal/>
@@ -28,8 +34,10 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
   grid-template-columns: 3fr 1fr;
 }
 
-.carrinho {
-  /* min-width: 20%; */
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 </style>

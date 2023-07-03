@@ -35,7 +35,7 @@ function formatarPreco(preco) {
                       min="1"
                     />
                   </p>
-                  <button @click="removerItemCarrinho(item)">&#128465;</button>
+                  <button class="button" @click="removerItemCarrinho(item)">&#128465;</button>
                   <p>Total: {{ formatarPreco(item.total) }}</p>
                 </div>
               </div>
@@ -49,6 +49,8 @@ function formatarPreco(preco) {
 </template>
 
 <style scoped>
+
+
 .carrinho{
   color: rgb(255, 255, 255);
 }
@@ -91,7 +93,7 @@ function formatarPreco(preco) {
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 0;
   margin: 0;
 }

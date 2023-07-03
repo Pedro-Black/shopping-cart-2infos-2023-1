@@ -27,6 +27,25 @@ function formatarPreco(preco) {
 
 <style scoped>
 
+button{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgb(44, 0, 240);
+}
 .card-livro {
   margin: 5px 10px;
   padding: 10px;
@@ -43,7 +62,7 @@ function formatarPreco(preco) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-radius: 10px;
   width: 180px;
   height: 270px;
