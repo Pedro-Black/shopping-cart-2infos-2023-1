@@ -15,10 +15,15 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
 
 <template>
 <div class="cabeçario">
-  <span class="titulo">
-    <h1 style="color: rgb(255, 255, 255);">Black List</h1>
-    <h1 style=" color: rgb(255, 255, 255);">Total: {{ formatarPreco(carrinho.total) }} </h1>
-  </span>
+  <div class="titulo">
+    <h1>
+      <span class="branco">Black</span>
+      <span class="laranja ml-5">List</span>
+    </h1>
+    <h1>
+      <span class="branco">Total: {{ formatarPreco(carrinho.total) }}</span>
+    </h1>
+  </div>
   </div>
   <div class="container-geral">
     <listagem-livros/>
@@ -28,8 +33,6 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
 
 <style scoped>
 .container-geral {
-  /* display: flex;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
@@ -38,6 +41,19 @@ import ListagemLivros from '@/components/ListagemLivros.vue'
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 20px 0 10px;
+  font-size: 1.5rem;
+}
+.branco {
+  color: rgb(255, 255, 255);
+}
+
+.laranja {
+  color:rgb(210, 105, 30)
+}
+
+.ml-5{
+  margin-left: .5em;
 }
 
 </style>
